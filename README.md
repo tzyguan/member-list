@@ -29,6 +29,7 @@ So that the table will have the list of all members.
 I will specify their name, email, and telephone number
 And those infomation will appear on the first row
 along with current date and time.
+I can remove member information from the list.
 ```
 
 ## Implementation
