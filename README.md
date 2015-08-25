@@ -1,15 +1,10 @@
 #ST Dev KL's Member List
-The quick way to evaluate your AngularJS skill
+The quick way for us to evaluate your AngularJS skill
 
 ## Requirements
 - Github Account
 - [Node.js](https://nodejs.org/download/)
 - [bower](http://bower.io/)
-
-## Dependencies
-- [AngularJS](https://angularjs.org/)
-- [Grunt](http://gruntjs.com/)
-- [Karma](http://karma-runner.github.io/)
 
 ## Instructions
 - Ensure that npm and bower are installed.
@@ -20,6 +15,11 @@ The quick way to evaluate your AngularJS skill
 npm install
 bower install
 ```
+
+## Dependencies
+- [AngularJS](https://angularjs.org/)
+- [Grunt](http://gruntjs.com/)
+- [Karma](http://karma-runner.github.io/)
 
 ## User Story
 ```
