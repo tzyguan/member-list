@@ -1,0 +1,36 @@
+<!doctype html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ST Dev KL Member List</title>
+    <link rel="stylesheet" href="src/styles.css" type="text/css" />
+</head>
+<body ng-app="app.memberList">
+    <div id="form">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" placeholder="ST Dev KL" name="name">
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" placeholder="user@domain.com" name="email">
+        </div>
+        <div>
+            <label for="tel">Telephone:</label>
+            <input type="tel" placeholder="" name="tel">
+        </div>
+        <div>
+            <button type="button" name="submit">Submit</button>
+        </div>
+    </div>
+    <div id="member-list">
+        <div id="member-list-header">
+            <div>ID</div>
+            <div>Name</div>
+            <div>Telephone</div>
+            <div>Date Added</div>
+        </div>
+    </div>
+    <script src="bower_components/angular/angular.min.js" type="application/javascript"></script>
+    <script src="src/script.js" type="application/javascript"></script>
+</body>
