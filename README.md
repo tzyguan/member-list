@@ -21,7 +21,9 @@ bower install
 - [Grunt](http://gruntjs.com/)
 - [Karma](http://karma-runner.github.io/)
 
-## User Story
+## User Stories
+
+### Add member information
 ```
 As a user
 I want to add member information
@@ -29,7 +31,15 @@ So that the table will have the list of all members.
 I will specify their name, email, and telephone number
 And those infomation will appear on the first row
 along with current date and time.
-I can remove member information from the list.
+```
+
+### Remove member information
+```
+AS a user
+I want to remove member information
+So that the member will be removed from the table
+I will click on DELETE button at selected row
+And the row will be removed from the table.
 ```
 
 ## Implementation
