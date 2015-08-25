@@ -30,7 +30,7 @@ I want to add member information
 So that the table will have the list of all members.
 I will specify their name, email, and telephone number
 And those infomation will appear on the first row
-along with current date and time.
+along with unique ID number, current date, and time.
 ```
 
 ### Remove member information
