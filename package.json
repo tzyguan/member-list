@@ -4,7 +4,7 @@
   "description": "Member list for ST Dev KL",
   "main": "karma.conf.js",
   "scripts": {
-    "test": "test"
+    "test": "grunt test"
   },
   "author": "ST Dev KL",
   "license": "UNLICENSED",
