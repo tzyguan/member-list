@@ -8,7 +8,7 @@ module.exports = function(grunt) {
                     specs: ['src/test/*.spec.js'],
                     template: require('grunt-template-jasmine-istanbul'),
                     vendor: [
-                        'bower_components/angular/angular.min.js',
+                        'bower_components/**/*.min.js',
                         'node_modules/angular-mocks/angular-mocks.js'
                     ],
                     templateOptions: {
