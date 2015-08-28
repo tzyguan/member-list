@@ -59,6 +59,11 @@ Run `grunt test`.
 
 ### Libraries
 - You are allowed to add more libraries to have a working application and a more presentable layout.
+- Install respective library with bower:
+
+```
+bower install <library-name> --save
+```
 
 ## Submit Your Work
 Please submit through Github Pull Request.
