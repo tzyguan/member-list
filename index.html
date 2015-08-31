@@ -5,32 +5,70 @@
     <title>ST Dev KL Member List</title>
     <link rel="stylesheet" href="src/styles.css" type="text/css" />
 </head>
-<body ng-app="app.memberList">
-    <div id="form">
-        <div>
-            <label for="name">Name:</label>
-            <input type="text" placeholder="ST Dev KL" name="name">
-        </div>
-        <div>
-            <label for="email">Email:</label>
-            <input type="email" placeholder="user@domain.com" name="email">
-        </div>
-        <div>
-            <label for="tel">Telephone:</label>
-            <input type="tel" placeholder="" name="tel">
-        </div>
-        <div>
-            <button type="button" name="submit">Submit</button>
-        </div>
-    </div>
-    <div id="member-list">
-        <div id="member-list-header">
-            <div>ID</div>
-            <div>Name</div>
-            <div>Telephone</div>
-            <div>Date Added</div>
-        </div>
-    </div>
+<body ng-app="app.memberList" ng-controller="memberCtrl">
+	<form ng-submit="todoAdd()">
+    
+	<table align="center">
+		<tr>
+			<td>Name: </td>
+			<td><input type="text" placeholder="ST Dev KL" ng-model="Name" id="name"></td>
+		</tr>
+		<tr>
+			<td>Email: </td>
+			<td><input type="email" placeholder="user@domain.com" ng-model="Email" id="email"></td>
+		</tr>
+		<tr>	
+			<td>Telephone: </td>
+			<td><input type="text" placeholder="Tel.." ng-model="Tel" id="tel"></td>
+		</tr>
+		<tr>
+		<td>&nbsp;</td>
+		<td><input type="submit" value="Add New"></td>
+		
+		</tr>
+		<tr></tr>
+	
+	</table>
+	
+
+	</form>
+
+	<br>
+	<br>
+
+
+	<table align="center">
+		<tr>  
+			<th>ID</th>
+			<th>Name</th>
+			<th>Email</th>
+			<th>Telephone</th>
+			<th>Date</th>
+			<th>Del</th>
+		</tr>
+		<tr ng-repeat="members in membersList">
+			<td>{{ members.arry_id }}</td>
+			<td>{{ members.arry_name }}</td>
+			<td>{{ members.arry_email }}</td>
+			<td>{{ members.arry_tele }}</td>
+			<td>{{ members.arry_date }}</td>
+			 <td>
+				<input type="checkbox" ng-model="members.arry_done">
+			</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td><button ng-click="remove()">Remove marked</button></td>
+		
+		</tr>
+	</table>
+	
+
     <script src="bower_components/angular/angular.min.js" type="application/javascript"></script>
+	
     <script src="src/script.js" type="application/javascript"></script>
 </body>

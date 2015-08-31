@@ -1,0 +1,13 @@
+body{
+		width: 760px;
+		margin : 0 auto;
+	}
+	
+	
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+.f-right{
+	float:right;
+}
