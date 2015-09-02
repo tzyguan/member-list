@@ -74,11 +74,8 @@ describe('MemberList Test', function(){
 		$scope.Tel = '017-9552153';
 		$scope.todoAdd();
 		console.log('after add - Name = '+ $scope.membersList[0].arry_name);	
-			
-		$scope.membersList[0].arry_done = true;
-		console.log('before del - Name = '+ $scope.membersList[0].arry_name);
-		
-		$scope.remove();
+				
+		$scope.remove(2);
 		console.log('after del - Name = '+ $scope.membersList[0].arry_name);
 		expect($scope.membersList[0].arry_name).toEqual('teeg'); 
 

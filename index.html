@@ -29,13 +29,10 @@
 		<tr></tr>
 	
 	</table>
-	
-
 	</form>
 
 	<br>
 	<br>
-
 
 	<table align="center">
 		<tr>  
@@ -53,22 +50,13 @@
 			<td>{{ members.arry_tele }}</td>
 			<td>{{ members.arry_date }}</td>
 			 <td>
-				<input type="checkbox" ng-model="members.arry_done">
+				<button ng-click="remove(members.arry_id)">Remove marked</button>
 			</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td><button ng-click="remove()">Remove marked</button></td>
-		
 		</tr>
 	</table>
 	
 
     <script src="bower_components/angular/angular.min.js" type="application/javascript"></script>
-	
+	<script src="bower_components/lodash/lodash.js" type="application/javascript"></script>
     <script src="src/script.js" type="application/javascript"></script>
 </body>
